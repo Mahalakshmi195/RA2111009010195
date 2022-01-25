@@ -11,23 +11,23 @@ char transaction = 'y';
 
 void main()
 {
-  while (pin != 1520)
+  while (pin != 1234)
   {
 
-    printf("ENTER YOUR SECRET PIN NUMBER:");
+    printf("ENTER YOUR 4-DIGIT PIN NUMBER:");
 
     scanf("%d", & pin);
 
-    if (pin != 1520)
+    if (pin != 1234)
 
-      printf("PLEASE ENTER VALID PASSWORD! \a\n");
+      printf("PLEASE ENTER VALID PIN! \a\n");
   }
 
   do
 
   {
 
-    printf("\n********Welcome to XYZ Bank ATM Service***********\n");
+    printf("\n********WELCOME TO XYZ BANK***********\n");
 
     printf("1. Check Balance\n");
 
@@ -48,7 +48,7 @@ void main()
 
     case 1:
 
-      printf("\n YOUR BALANCE IS TK : %lu ", amount);
+      printf("\n YOUR BALANCE IS Rs. %lu ", amount);
 
       break;
 
@@ -104,7 +104,7 @@ void main()
       printf("\n INVALID CHOICE");
     }
 
-    printf("\n\n\n DO U WISH TO HAVE ANOTHER TRANSCATION?(y/n): \n");
+    printf("\n\n\n DO YOU WISH TO CONTINUE TRANSCATION?(y/n): \n");
 
     fflush(stdin);
 
@@ -116,6 +116,6 @@ void main()
 
   } while (!k);
 
-  printf("\n\n THANKS FOR USING XYZ Bank ATM SERVICE");
+  printf("\n\n THANK YOU FOR USING XYZ Bank ATM SERVICE");
 
 }
